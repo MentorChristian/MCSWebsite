@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+body {
+	margin:0;
+	padding:0;
+}
+
+
+#content p {
+	font-size: 1.5em;	
+	color: gray;
+	position:relative;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+.ssimages li {
+	margin-left:35%;
+	/** Fallback in case JavaScript is disabled **/
+	//position:absolute;
+	display:inline-block;
+	box-shadow: 0 1em 1em -1em rgba(0, 0, 0, 1);
+}
+
+#title {
+		font-family: "Oswald", "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	position:relative;
+	text-align:center;
+	font-size: 5em;
+    color: #093;
+	margin: 0.3em 0 0 0;
+	padding:0;
+}
+
+hr {
+	width:75%;	
+}
+
+#push {
+	position:relative;
+	width: 0.01em;
+	//border: 1px solid red;
+}
+
+#plasmacontent {
+	position:relative;
+	margin:auto;
+	display:block;
+	overflow:auto;
+	width:80%;
+}
+
+#plasmacontent p {
+	text-align: center;	
+	color: #555;
+}

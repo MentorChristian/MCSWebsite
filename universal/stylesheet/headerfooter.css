@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+	margin: 0 0 5em; /* bottom = footer height */
+	padding: 0;
+	height: 100%;
+}
+
+
+nav{
+	font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	background-color: #383838;
+	box-shadow: 0 0.125em 0.125em -0.063em rgba(0, 0, 0, 0.5);
+	color: #888;
+	display: block;
+	overflow: hidden;
+	width: 100%; 
+	margin: 0;
+	padding: 0;
+}
+
+#navicon {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-decoration: none;
+	display:block;
+	float:left;
+	line-height: 3.4em;
+	color: #3399CC;
+	position:absolute;
+}
+
+nav ul {
+	margin: 0 auto;
+	padding: 0;
+	text-align:center;
+}
+
+/*** Make our navigation tabs inline block ***/
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s; 
+}
+
+	
+/*** Style our navigation items ***/
+nav > ul > li > a { 
+	color: #FFF;
+	display: block;
+	line-height: 3.5em;
+	padding: 0 1.5em;
+	text-decoration: none;
+}
+
+/*** Create drop-down carrot **/
+nav > ul > li > a > .carrot {
+	border-top: 0.250em solid #aaa;
+	border-right: 0.250em solid transparent;
+	border-left: 0.250em solid transparent;
+	content: "";
+	display: inline-block;
+	height: 0;
+	width: 0;
+	vertical-align: middle;
+	
+	-webkit-transition: color 0.1s linear;
+	-moz-transition: color 0.1s linear;
+	-o-transition: color 0.1s linear;
+	  transition: color 0.1s linear; 
+}
+  
+/*** Add hover animations ***/
+  
+nav > ul > li:hover {
+  background-color: #3399CC;
+}
+
+nav > ul > li:hover > a {
+  color: #FFF;
+}
+
+nav > ul > li:hover > a > .caret {
+  border-top-color: rgb(255, 255, 255);
+}
+
+/*** Custom dropdown list using divs ***/
+nav > ul > li > div {
+	background-color: #F7F7F7;
+	border-top: 0;
+	border-radius: 0 0 0.250em 0.250em;
+	box-shadow: 0 0.125em 0.125em -0.063em rgba(0, 0, 0, 0.055);
+	display: none;
+	margin: 0;
+	position: absolute;
+	width: 10.313em;
+	z-index: 100;
+	
+	-webkit-transiton: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-ms-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	-transition: opacity 0.2s;
+}
+
+/*** Make dropdown list items block display ***/
+nav > ul > li > div ul > li {
+	display: block;
+}
+
+/*** Style dropdown list items ***/
+nav > ul > li > div ul > li > a {
+	color: #000;
+	display: block;
+	padding: 0.750em 1.5em;
+	text-decoration: none;
+}
+
+/*** Add hover effect for dropdown list items ***/
+nav > ul > li > div ul > li:hover > a {
+	color: #3399CC;
+}
+
+/*** Show div when it is being li is being hovered over ***/
+nav > ul > li:hover > div {
+	display: block;
+	opacity: 1;
+	visibility: visible;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 5em;
+    width: 100%;
+	background-color: #383838;
+}
+
+footer a {
+	text-decoration:none;
+}
+
+#copyright {
+	position:absolute;
+	display:inline;
+	text-align:center;
+	color:#FFF;
+	margin-top:2em;	
+	margin-left:43%;
+}
